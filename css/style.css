@@ -1,0 +1,115 @@
+body {
+  padding-top:40px;
+  font-family: "Open Sans";
+  color: white;
+}
+
+#main {
+    text-align: right;
+    padding-top: 200px;
+    padding-right: 30px;
+    color: white;
+    height: 100vh;
+    background: url(../images/background.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#title{
+    padding-right: 5px;
+    font-size: 3.0vw;
+    display: none;
+}
+#logo {
+    width: 50%;
+    display: none;
+    padding-bottom: 20px;
+
+}
+#news{
+    padding: 37px 65px 65px 65px;
+    height: 50vh;
+    background-color: #22264b;
+    color: white;
+}
+#about {
+    padding: 37px 65px 65px 65px;
+    background: #000000;
+    color: white;
+    min-height:100vh;
+}
+#resources {
+    padding: 37px 65px 65px 65px;
+    background: #ffffff;
+    color: black;
+}
+#resources-page {
+    background: #22264b;
+    color: black;
+}
+
+#contact {
+    background-color: #1d2731;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0px 10px 0px;
+}
+
+#social{
+    text-align:center;
+    background-color:black;
+}
+
+#contact-info{
+    float:left;
+    list-style-type: none;
+}
+
+.footer{
+    background-color: #1d2731;
+    color:white;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0px 10px 0px;
+}
+#message-form .footer-left {
+    float: left;
+    position: relative;
+}
+#message-form .footer-right {
+    float: right;
+    position: absolute;
+}
+
+.member{
+    height: 370px;
+    padding: 20px;
+    width: 230px;
+    color:black;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+}
+.member-img{
+    width: 150px;
+    margin: 20px;
+    height: 150px;
+}
+
+/* Team Page */
+#team {
+    padding: 37px 65px 37px 65px;
+    background: #A9A9A9;
+    align-items: center;
+}
+
+/*----- Responsive -----*/
+/*Large Devices*/
+@media screen and (min-width: 1150px) {
+}
+/*Medium sized devices*/
+@media screen and (min-width: 970px) {
+}
+/*Phones*/
+@media (max-width: 765px) {
+}
