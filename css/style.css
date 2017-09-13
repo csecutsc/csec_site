@@ -7,16 +7,16 @@ body {
     margin: auto;
 }
 #main {
-    text-align: right;
+    text-align: center;
     padding-top: 200px;
     padding-right: 30px;
     color: white;
     height: 100vh;
-    background: url(../images/background.jpg) no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-image: url("/images/cea/csec_seminar_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
 }
-
 #title{
     padding-right: 5px;
     font-size: 3.0vw;
@@ -38,7 +38,13 @@ body {
     padding: 37px 65px 65px 65px;
     background: #000000;
     color: white;
-    min-height:100vh;
+    min-height:50vh;
+}
+#divisions {
+    padding: 37px 65px 65px 65px;
+    background: #000000;
+    color: white;
+    min-height:50vh;
 }
 #resources {
     padding: 37px 65px 65px 65px;
@@ -50,14 +56,14 @@ body {
     color: black;
 }
 
-#contact {
+#location {
     background-color: #1d2731;
     color: white;
     font-size: 12px;
     padding: 10px 0px 10px 0px;
 }
 
-#social{
+#contact{
     text-align:center;
     background-color:black;
 }
@@ -78,12 +84,7 @@ body {
     position: relative;
     overflow: hidden;
 }
-#info-box{
-    float:left;
-}
-#msg-box{
-    float:right;
-}
+
 
 /* Team Page */
 #team {
@@ -114,6 +115,12 @@ body {
     text-align: center
 }
 
+#info-box{
+    float:left;
+}
+#msg-box{
+    float:right;
+}
 
 /*----- Responsive -----*/
 /*Large Devices*/

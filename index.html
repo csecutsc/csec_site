@@ -11,7 +11,7 @@
   <meta name="description" content="Welcome to CSEC. The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their career.">
   <meta name="author" content="Computer Science Enrichment Club">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   
   <!-- Bootstrap 3 -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -67,8 +67,23 @@
 </nav>
 
 <!-- Header -->
-<div id="main">
-      
+<div class="jumbotron" id="main">
+  <div class="container">
+  <img src="images/csecwatermark.png" class="">
+  <div class="page-header">
+  <h1>Computer Science Enrichment Club</h1>
+</div>
+  </div>
+</div>
+
+<!-- Events -->
+<div id="events">
+  <div class="container">
+      <h3>Events</h3>
+      <div class="card">
+          
+      </div>
+  </div>
 </div>
 
 <!-- About -->
@@ -95,45 +110,80 @@
     </div>
 </div>
 
+<!-- Events -->
+<div id="divisions">
+  <div class="container">
+      <h3>Three Divisions, Three times the Fun</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fa fa-graduation-cap"></i>
+          <h3>Algorithms</h3> <p>C++ Programming, Competitive Programming techniques and algorithms, source control, and more.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-cogs"></i>
+          <h3>Network Security</h3> <p>Create amazing applications, games, and programs and explore other unique creations at multiple Hackathons all over North America.</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-globe"></i>
+          <h3>Web Development</h3> <p>Network with other developers and programmers, meet new friends, and collaborate on personal projects together.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Social -->
-<div id="social">
+<div id="contact">
     <div class="container">
         <h3>Contact Us</h3>
         <hr>
         <p class="para">Reach us at any of the social media links or drop us a line with the form below</p>
-        <a href="https://github.com/csecutsc"><i class="fa fa-github"></i></a>
-        <a href="https://www.facebook.com/pg/CSEC.UTSC/"><i class="fa fa-facebook-square"></i></a>
-        <a href="https://www.youtube.com/channel/UC9x29X1_P9vhWe01g-D73xw"><i class="fa fa-youtube-square"></i></a>
-        <br>
-        <a href="mailto:csec@utsc.utoronto.ca"><i class="fa fa-envelope"></i> csec@utsc.utoronto.ca</a>
-        <a href="#"><i class="fa fa-phone-square"></i> +1 (647) 575 3660</a>
+        <div id="social">
+            <a href="https://github.com/csecutsc"><i class="fa fa-github"></i></a>
+            <a href="https://www.facebook.com/pg/CSEC.UTSC/"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.youtube.com/channel/UC9x29X1_P9vhWe01g-D73xw"><i class="fa fa-youtube-square"></i></a>
+        </div>
+        <div id="contact-links">
+            <a href="mailto:csec@utsc.utoronto.ca"><i class="fa fa-envelope"></i> csec@utsc.utoronto.ca</a>
+            <a href="#"><i class="fa fa-phone-square"></i> +1 (647) 575 3660</a>
+        </div>
+        <div class="message-form">
+        <div class="container">
+        <form action="action.php" method="post">
+          <div class="row">
+            <div class="col-lg-6" id="info-box">
+            <div class="input-group">
+            <input type="text" value="Name - Max 50 characters" name="Name" maxlength="50" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
+            </div>
+            <div class="input-group">
+            <input type="email" value="Email - example[at]mail[dot]com" name="Email" maxlength="70" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
+            </div>
+            <div class="input-group">
+            <input type="text" value="Phone number - ### ### ####" name="Phone" maxlength="12" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone number';}" required="">
+             </div>
+          </div>
+          <div class="col-md-6" id="msg-box">     
+            <textarea name="Message" maxlength="1000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>  
+            <br>
+            <input type="submit" name="submit" value="Submit Now">  
+          </div>  
+        </div>
+        </form>
+      </div>
+    </div>
     </div>
 </div>
 
 <!-- footer -->
-<div class="message-form">
-  <div class="container">
-    <form action="action.php" method="post">
-      <div class="row" id="info-box">
-        <input type="text" value="Name - Max 50 characters" name="Name" maxlength="50" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required=""><br>
-        <input type="email" value="Email - example[at]mail[dot]com" name="Email" maxlength="70" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required=""> <br>
-        <input type="text" value="Phone number - ### ### ####" name="Phone" maxlength="12" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone number';}" required="">
-      </div>
-      <div class="col-md-6" id="msg-box">     
-        <textarea name="Message" maxlength="1000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>  
-        <br>
-        <input type="submit" name="submit" value="Submit Now">  
-      </div>   
-    </form>
-  </div>
-</div>
+
 
 <!-- Contact -->
-<div id="contact">
+<div id="location">
     <div class="container">
         <div class="row">
             <ul id="contact-info" class="col-md-6 col-xs-9">
-                <li><p><strong>University of Toronto Scarborough</strong> <br> 1265 Military Trail <br> Toronto, ON <br> M1C 1A4</p></li>
+                <li><p><strong>University of Toronto Scarborough</strong> <br> 1265 Military Trail <br> Toronto, ON <br> M1C 1A4</p>
+                </li>
             </ul>
         </div>
     </div>
