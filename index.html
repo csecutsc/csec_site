@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <meta name="keywords" content="CSEC, CSEC-W, CSEC-A, CSEC-S">
     
-  <title>CS Enrichment Club</title>
+  <title>CSEC | Computer Science Enrichment Club</title>
   <meta name="description" content="Welcome to CSEC. The Computer Science Enrichment Club is a student-run group that focuses on helping students with a passion for Computer Science take the next steps in their career.">
   <meta name="author" content="Computer Science Enrichment Club">
 
@@ -28,7 +28,8 @@
 </head>
 
 <body>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+  <div class="container">
   <a class="navbar-brand" href="#main">HOME</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=#navbar-items>
     <span class="navbar-toggler-icon"></span>
@@ -36,6 +37,9 @@
 
   <div class="collapse navbar-collapse" id="navbar-items">
     <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">EVENTS</a>
+      </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">ABOUT</a>
       </li>
@@ -49,7 +53,7 @@
         <a class="nav-link" href="w/index.html">CSEC-W</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="resources.html">ARCHIVE</a>
+        <a class="nav-link" href="resources.html">SEMINARS</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="team.html">TEAM</a>
@@ -59,6 +63,7 @@
       </li>
     </ul>
   </div>
+</div>
 </nav>
 
 <!-- Header -->
@@ -109,12 +114,12 @@
 <div class="message-form">
   <div class="container">
     <form action="action.php" method="post">
-      <div class="col-md-6">
+      <div class="row" id="info-box">
         <input type="text" value="Name - Max 50 characters" name="Name" maxlength="50" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required=""><br>
         <input type="email" value="Email - example[at]mail[dot]com" name="Email" maxlength="70" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required=""> <br>
         <input type="text" value="Phone number - ### ### ####" name="Phone" maxlength="12" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone number';}" required="">
       </div>
-      <div class="col-md-6">     
+      <div class="col-md-6" id="msg-box">     
         <textarea name="Message" maxlength="1000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}" required="">Message</textarea>  
         <br>
         <input type="submit" name="submit" value="Submit Now">  

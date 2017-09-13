@@ -1,9 +1,11 @@
 body {
-  padding-top:40px;
+  padding-top: 50px;
   font-family: "Open Sans";
   color: white;
 }
-
+#navbar{
+    margin: auto;
+}
 #main {
     text-align: right;
     padding-top: 200px;
@@ -72,13 +74,15 @@ body {
     font-size: 12px;
     padding: 10px 0px 10px 0px;
 }
-#message-form .footer-left {
-    float: left;
+#message-form .container{
     position: relative;
+    overflow: hidden;
 }
-#message-form .footer-right {
-    float: right;
-    position: absolute;
+#info-box{
+    float:left;
+}
+#msg-box{
+    float:right;
 }
 
 /* Team Page */
@@ -89,7 +93,7 @@ body {
 }
 .member{
     height: 320px;
-    width: 300px;
+    width: 275px;
     padding: 20px;
     color:black;
     margin: auto;
@@ -100,13 +104,33 @@ body {
     margin: auto;
 }
 
+.card-body{
+    text-align: center;
+}
+
+#open-positions {
+    background: white;
+    color: black;
+    text-align: center
+}
+
+
 /*----- Responsive -----*/
 /*Large Devices*/
 @media screen and (min-width: 1150px) {
+    .member{
+        margin-bottom: 0px;
+    }
 }
 /*Medium sized devices*/
-@media screen and (min-width: 970px) {
+@media screen and (min-width:765px) {
+    .member{
+        margin-bottom: 10px;
+    }
 }
 /*Phones*/
 @media (max-width: 765px) {
+    .member{
+        margin-bottom: 10px;
+    }
 }
