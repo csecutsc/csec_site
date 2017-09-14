@@ -16,7 +16,7 @@ body {
     text-align: center;
     color: white;
     height: 70vh;
-    background-image: url("/images/cea/csec_seminar_1.png");
+    background-image: url("../images/cea/csec_seminar_1.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
