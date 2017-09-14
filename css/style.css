@@ -1,38 +1,34 @@
 body {
-  padding-top: 50px;
   font-family: "Open Sans";
   color: white;
 }
 #navbar{
-    margin: auto;
+    background-color: transparent;
+}
+.nav-item{
+    text-align: right;
+}
+.fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
 #main {
     text-align: center;
-    padding-top: 200px;
-    padding-right: 30px;
     color: white;
-    height: 100vh;
+    height: 70vh;
     background-image: url("/images/cea/csec_seminar_1.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: black;
 }
+
 #title{
     padding-right: 5px;
     font-size: 3.0vw;
     display: none;
 }
-#logo {
-    width: 50%;
-    display: none;
-    padding-bottom: 20px;
 
-}
-#news{
-    padding: 37px 65px 65px 65px;
-    height: 50vh;
-    background-color: #22264b;
-    color: white;
+#events .carousel-item{
+    height:80vh;
 }
 #about {
     padding: 37px 65px 65px 65px;
@@ -45,6 +41,9 @@ body {
     background: #000000;
     color: white;
     min-height:50vh;
+}
+#divisions .card{
+    color:black;
 }
 #resources {
     padding: 37px 65px 65px 65px;
@@ -83,6 +82,15 @@ body {
 #message-form .container{
     position: relative;
     overflow: hidden;
+}
+
+#social a{
+    font-size:50px;
+    color: inherit;
+    padding: 20px;
+}
+#social a:hover{
+    color: green;
 }
 
 
