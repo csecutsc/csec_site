@@ -6,3 +6,45 @@ body {
     margin: 20px;
 }
 
+#navbar {
+    background: black;
+}
+
+#navbar .nav-link {
+    color: white;
+}
+
+#main {
+    text-align: center;
+    color: white;
+    height: 70vh;
+    background-image: url("../../images/cea/icpc_promo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+#main .page-header{
+    text-align: center;
+    margin: auto;
+}
+
+/*----- Responsive -----*/
+/*Large Devices*/
+@media screen and (min-width: 1150px) {
+    #main .page-header{
+        font-size: 500px;
+    }
+}
+/*Medium sized devices*/
+@media screen and (min-width:765px) {
+    #main .page-header{
+        font-size:60px;
+    }
+}
+/*Phones*/
+@media (max-width: 765px) {
+    #main .page-header{
+        font-size:70px;
+    }
+}
