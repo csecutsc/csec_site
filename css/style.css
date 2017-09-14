@@ -1,17 +1,21 @@
 body {
   font-family: "Open Sans";
-  color: white;
+  color: black;
+  background: #EFEFEF;
 }
 #navbar{
     background-color: transparent;
-}
-.nav-item{
-    text-align: right;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: #EFEFEF !important;
   transition: background-color 200ms linear;
 }
+.navbar-fixed-top{
+position: relative;
+}
+
 #main {
     text-align: center;
     color: white;
@@ -19,57 +23,39 @@ body {
     background-image: url("../images/cea/csec_seminar_1.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin:auto;
 }
 
-#title{
-    padding-right: 5px;
-    font-size: 3.0vw;
-    display: none;
+#events {
+    color:black;
 }
-
 #events .carousel-item{
     height:80vh;
 }
 #about {
-    padding: 37px 65px 65px 65px;
-    background: #000000;
-    color: white;
     min-height:50vh;
 }
 #divisions {
-    padding: 37px 65px 65px 65px;
-    background: #000000;
-    color: white;
     min-height:50vh;
 }
 #divisions .card{
     color:black;
 }
-#resources {
-    padding: 37px 65px 65px 65px;
-    background: #ffffff;
-    color: black;
-}
-#resources-page {
-    background: #22264b;
-    color: black;
-}
 
-#location {
-    background-color: #1d2731;
-    color: white;
-    font-size: 12px;
-    padding: 10px 0px 10px 0px;
-}
 
 #contact{
     text-align:center;
-    background-color:black;
 }
 
 #contact-info{
     float:left;
     list-style-type: none;
+}
+#location {
+    background-color: #1d2731;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0px 10px 0px;
 }
 
 .footer{
