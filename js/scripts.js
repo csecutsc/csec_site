@@ -22,13 +22,6 @@ $(document).ready(function () {
     
 });
 
-$(function () {
-    $(document).scroll(function () {
-    var $nav = $(".fixed-top");
-    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  });
-});
-
 function adjust_body_offset() {
     $('body').css('padding-top', $('.navbar').outerHeight(true) + 'px' );
 }

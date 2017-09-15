@@ -6,16 +6,9 @@ body {
   background: #EFEFEF;
 }
 #navbar{
-    background-color: transparent;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
-.fixed-top.scrolled {
-  background-color: #EFEFEF !important;
-  transition: background-color 200ms linear;
-}
-.navbar-fixed-top{
-position: relative;
+    background-color: #EFEFEF;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 #main {
