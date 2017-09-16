@@ -1,50 +1,46 @@
-body { 
-    padding-top: 50px; 
-}
-
-#header { 
-    margin: 20px;
-}
-
-#navbar {
-    background: black;
-}
-
-#navbar .nav-link {
-    color: white;
-}
-
-#main {
-    text-align: center;
+#algo-title {
     color: white;
     height: 70vh;
     background-image: url("../../images/cea/icpc_promo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
-#main .page-header{
+#algo-title .page-header{
     text-align: center;
-    margin: auto;
+}
+
+#resources h3{
+    text-align: center;
+}
+
+#resources ul{
+    list-style: none;
+    padding: 0;
 }
 
 /*----- Responsive -----*/
 /*Large Devices*/
 @media screen and (min-width: 1150px) {
-    #main .page-header{
-        font-size: 500px;
+    #algo-title .page-header{
+        font-size: 120px;
     }
 }
 /*Medium sized devices*/
 @media screen and (min-width:765px) {
-    #main .page-header{
-        font-size:60px;
+    #algo-title .page-header{
+        font-size: 80px;
     }
 }
 /*Phones*/
 @media (max-width: 765px) {
-    #main .page-header{
-        font-size:70px;
+    #algo-title {
+        height:50vh;
+    }
+    #algo-title .page-header{
+        font-size:50px;
     }
 }
