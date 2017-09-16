@@ -9,24 +9,15 @@ $(document).ready(function () {
         e.preventDefault();
     });
     // smooth scrolling
-    $("a[href^='#']").on('click', function(e) {
+    $("a[href^='#']").on('click', function (e) {
         var hash = this.hash;
-       $('html, body').animate({
-           scrollTop: $(hash).offset().top
-         }, 1000, function(){
-           window.location.hash = hash;
-         });
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function () {
+            window.location.hash = hash;
+        });
         e.preventDefault();
     });
-    
-    
 });
-
-function adjust_body_offset() {
-    $('body').css('padding-top', $('.navbar').outerHeight(true) + 'px' );
-}
-
 $(window).resize(adjust_body_offset);
-
 $(document).ready(adjust_body_offset);
-

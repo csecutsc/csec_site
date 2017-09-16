@@ -9,6 +9,10 @@ body {
     background: #FFFFFF;
 }
 
+.nav-nopadding {
+    padding: 0;
+}
+
 .body-par {
     margin: 30px 0;
 }
@@ -26,7 +30,7 @@ body {
 
 #navbar {
     background-color: #1d2731;
-    padding: 1rem 3rem;
+    padding: 1.5rem 3rem;
 }
 
 #main {
