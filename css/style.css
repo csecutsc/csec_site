@@ -113,11 +113,14 @@ body {
 }
 
 #contact-links {
-    margin: 20px 0;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
 }
 
 #contact-links a {
     margin: 5px 0;
+    padding: 0px 10px 0px 10px;
     display: block;
     color: #454C57;
     text-decoration: none;
