@@ -17,19 +17,6 @@ body {
     margin: 30px 0;
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.nav-link:focus,
-.navbar-brand,
-.navbar-brand:focus {
-    color: white;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-brand:hover {
-    color: #FF9326;
-}
-
 #navbar {
     background-color: #1d2731;
     padding: 1.5rem 3rem;
