@@ -1,100 +1,189 @@
 /* ONLY ABBY CAN TOUCH RN */
+
+
 /* do not change---------------------- */
+
 body {
-  font-family: "Open Sans";
-  color: black;
-  background: #EFEFEF;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    background: #FFFFFF;
 }
-#navbar{
-    background-color: #EFEFEF;
-    padding-left: 3rem;
-    padding-right: 3rem;
+
+.body-par {
+    margin: 30px 0;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-brand {
+    color: white;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+    color: #FF9326;
+}
+
+#navbar {
+    background-color: #1d2731;
+    padding: 1rem 3rem;
 }
 
 #main {
     text-align: center;
     color: white;
     height: 70vh;
+    min-height: 500px;
     background-image: url("../images/cea/csec_seminar_1.png");
+    border-radius: 0px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin:auto;
+    margin: auto;
+}
+
+.logo {
+    margin-top: 10%;
+}
+
+.card-image {
+    padding: 10% 60px;
+}
+
+.page-header {
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 400;
+    margin: 50px 0 30px 0;
+}
+
+.thirds-item {
+    background: #f0f0f0;
+    max-width: 31%;
+    padding: 25px;
+    border-radius: 5px;
+    margin: 1%;
+}
+
+.dark {
+    background: #454C57;
+}
+
+.dark-card-btn {
+    margin-top: 20px;
+}
+
+.white-text {
+    color: white;
+}
+
+.thirds-header {
+    margin: 20px 0;
 }
 
 #events {
-    color:black;
+    color: black;
 }
-#events .carousel-item{
-    height:80vh;
+
+#events .carousel-item {
+    height: 80vh;
 }
+
 #about {
-    min-height:50vh;
+    min-height: 50vh;
 }
+
 #divisions {
-    min-height:50vh;
-}
-#divisions .card{
-    color:black;
+    min-height: 50vh;
 }
 
-
-#contact{
-    text-align:center;
+#divisions .card {
+    color: black;
 }
 
-#contact-info{
-    float:left;
+#contact {
+    text-align: center;
+}
+
+#contact-links {
+    margin: 20px 0;
+}
+
+#contact-links a {
+    margin: 5px 0;
+    display: block;
+    color: #454C57;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+#contact-links a:hover {
+    color: #1d2731;
+}
+
+#contact-info {
+    float: left;
     list-style-type: none;
 }
+
 #location {
     background-color: #1d2731;
     color: white;
     font-size: 12px;
-    padding: 10px 0px 10px 0px;
+    padding: 30px 0px;
 }
 
-.footer{
+.footer {
     background-color: #1d2731;
-    color:white;
+    color: white;
     text-align: center;
     font-size: 12px;
     padding: 10px 0px 10px 0px;
 }
-#message-form .container{
+
+#message-form .container {
     position: relative;
     overflow: hidden;
 }
 
-#social a{
-    font-size:50px;
-    color: inherit;
+#social a {
+    font-size: 50px;
+    color: #454C57;
     padding: 20px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-#social a:hover{
-    color: green;
+
+#social a:hover {
+    color: #1d2731;
 }
 
 
 /* Team Page */
+
 #team {
     padding: 37px 65px 37px 65px;
     background: #EFEFEF;
     color: black;
 }
-.member{
+
+.member {
     height: 320px;
     width: 275px;
     padding: 20px;
-    color:black;
+    color: black;
     margin: auto;
 }
-.member-img{
+
+.member-img {
     width: 150px;
     height: 150px;
     margin: auto;
 }
 
-.card-body{
+.card-body {
     text-align: center;
 }
 
@@ -104,29 +193,69 @@ body {
     text-align: center
 }
 
-#info-box{
-    float:left;
-}
-#msg-box{
-    float:right;
+input[type=text],
+input[type=email] {
+    background: #EEE;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 6px 0;
+    box-sizing: border-box;
 }
 
+input[type=submit] {
+    margin-bottom: 30px;
+}
+
+textarea {
+    background: #EEE;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#info-box {
+    float: left;
+}
+
+#msg-box {
+    float: right;
+}
+
+
 /*----- Responsive -----*/
+
+
 /*Large Devices*/
+
 @media screen and (min-width: 1150px) {
-    .member{
+    .member {
         margin-bottom: 0px;
     }
 }
+
+
 /*Medium sized devices*/
+
 @media screen and (min-width:765px) {
-    .member{
+    .member {
         margin-bottom: 10px;
     }
 }
+
+
 /*Phones*/
+
 @media (max-width: 765px) {
-    .member{
+    .thirds-item {
+        max-width: 100%;
+        margin: 3% 5%;
+    }
+    .member {
         margin-bottom: 10px;
     }
 }
