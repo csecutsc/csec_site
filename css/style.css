@@ -57,6 +57,7 @@ body {
 
 .page-header {
     margin-top: 30px;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
 }
@@ -174,17 +175,29 @@ body {
 /* Team Page */
 
 #team {
-    padding: 37px 65px 37px 65px;
-    background: #EFEFEF;
+    padding: 40px 0px;
+    background: white;
     color: black;
 }
 
 .member {
+    background-color: #f0f0f0;
     height: 320px;
     width: 275px;
+    border: none;
     padding: 20px;
     color: black;
     margin: auto;
+}
+
+.member a {
+    color: #454C57;
+    margin: 5px;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.member a:hover {
+    color: #1d2731;
 }
 
 .member-img {
@@ -197,8 +210,22 @@ body {
     text-align: center;
 }
 
+.card-title {
+    color: #1d2731;
+    font-weight: 700;
+    margin: 20px 0 15px 0;
+}
+
+.card-subtitle {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #454C57;
+}
+
 #open-positions {
-    background: white;
+    margin: 60px 0;
+    background: #f0f0f0;
+    padding: 40px;
     color: black;
     text-align: center
 }
@@ -254,6 +281,13 @@ textarea {
 @media screen and (min-width:765px) {
     .member {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width:992px) and (min-width:768px) {
+    .member-img {
+        width: 100px;
+        height: 100px;
     }
 }
 
