@@ -1,12 +1,18 @@
 #sec-title {
     color: white;
     height: 70vh;
-    background-image: url("../../images/cea/icpc_promo.jpg");
+    background-image: url("../../images/cea/hacker_seminar.png");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    border-radius: 0px;
     align-items: center;
     display: flex;
+}
+
+#navbar {
+    background-color: #27ae60;
+    padding: 1.5rem 3rem;
 }
 
 #sec-title .page-header{
@@ -20,6 +26,18 @@
 #resources ul{
     list-style: none;
     padding: 0;
+}
+
+.resource-container {
+    margin-bottom: 50px;
+}
+
+#location {
+    background-color: #27ae60;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0px;
 }
 
 /*----- Responsive -----*/
