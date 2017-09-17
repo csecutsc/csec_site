@@ -19,5 +19,3 @@ $(document).ready(function () {
         e.preventDefault();
     });
 });
-$(window).resize(adjust_body_offset);
-$(document).ready(adjust_body_offset);

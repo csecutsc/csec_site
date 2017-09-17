@@ -1,8 +1,3 @@
-/* ONLY ABBY CAN TOUCH RN */
-
-
-/* do not change---------------------- */
-
 body {
     font-family: "Open Sans", sans-serif;
     color: black;
@@ -270,6 +265,23 @@ textarea {
 
 #dropdown-noti iframe{
     border:none;
+}
+
+/* Seminar */
+#past-seminars{
+    padding: 40px 0px;
+    background: white;
+    color: black;
+}
+
+#past-seminars .card{
+    min-height: 420px;
+}
+
+#past-seminars .panel-img{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 #arch-title {
