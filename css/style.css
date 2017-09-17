@@ -258,6 +258,16 @@ textarea {
     float: right;
 }
 
+/* News */
+
+#dropdown-noti h2{
+    text-align:center;
+}
+
+#dropdown-noti iframe{
+    border:none;
+}
+
 
 /*----- Responsive -----*/
 
