@@ -67,8 +67,16 @@ body {
     margin: 1%;
 }
 
-.dark {
-    background: #454C57;
+.red-bg {
+    background: #c0392b;
+}
+
+.green-bg {
+    background: #27ae60;
+}
+
+.indigo-bg {
+    background: #2e3192;
 }
 
 .dark-card-btn {
