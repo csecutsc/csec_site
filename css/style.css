@@ -275,7 +275,9 @@ textarea {
 }
 
 #past-seminars .card{
-    min-height: 420px;
+    min-height: 430px;
+    margin-top: 20px;
+
 }
 
 #past-seminars .panel-img{
