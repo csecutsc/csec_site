@@ -85,14 +85,6 @@ body {
     margin: 20px 0;
 }
 
-#events {
-    color: black;
-}
-
-#events .carousel-item {
-    height: 80vh;
-}
-
 #about {
     min-height: 50vh;
 }
@@ -277,7 +269,13 @@ textarea {
 #past-seminars .card{
     min-height: 430px;
     margin-top: 20px;
+    text-align: center;
+}
 
+#past-seminars .btn{
+    position: absolute;
+    right:0px;
+    bottom: 0px;
 }
 
 #past-seminars .panel-img{
