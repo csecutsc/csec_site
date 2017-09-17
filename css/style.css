@@ -22,6 +22,10 @@ body {
     padding: 1.5rem 3rem;
 }
 
+#dropdown-noti {
+    max-width: 300px;
+}
+
 #main {
     text-align: center;
     color: white;
