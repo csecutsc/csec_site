@@ -7,11 +7,16 @@
     justify-content: center;
     border-radius: 0px;
     align-items: center;
+    text-align: center;
     display: flex;
 }
 
 #algo-title .page-header{
     text-align: center;
+}
+
+.logo {
+    width: 250px;
 }
 
 #navbar {
