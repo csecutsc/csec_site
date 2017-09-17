@@ -34,11 +34,6 @@ body {
     margin: auto;
 }
 
-#algo-title,
-#sec-title {
-    border-radius: 0px;
-}
-
 .logo {
     margin-top: 10%;
 }
