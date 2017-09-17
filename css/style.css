@@ -34,7 +34,8 @@ body {
     margin: auto;
 }
 
-#algo-title {
+#algo-title,
+#sec-title {
     border-radius: 0px;
 }
 
