@@ -276,6 +276,7 @@ textarea {
     position: absolute;
     right:0px;
     bottom: 0px;
+    background-color: #1d2731;
 }
 
 #past-seminars .panel-img{
