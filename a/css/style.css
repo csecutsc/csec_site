@@ -26,6 +26,18 @@
     padding: 1.5rem 3rem;
 }
 
+.dropdown-menu {
+    background: #c0392b;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown:hover> .dropdown-menu {
+    display: block;
+}
+
 #resources h3{
     text-align: center;
 }

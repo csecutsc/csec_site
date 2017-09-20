@@ -17,6 +17,18 @@
     padding: 1.5rem 3rem;
 }
 
+.dropdown-menu {
+    background: #27AE60;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown:hover> .dropdown-menu {
+    display: block;
+}
+
 .logo {
     margin-top: 0;
     width: 250px;

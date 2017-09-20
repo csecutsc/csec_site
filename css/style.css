@@ -21,6 +21,18 @@ body {
     max-width: 300px;
 }
 
+.dropdown-menu {
+    background: #1A2B3C;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown:hover> .dropdown-menu {
+    display: block;
+}
+
 #main {
     text-align: center;
     color: white;
