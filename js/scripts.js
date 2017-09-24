@@ -18,4 +18,35 @@ $(document).ready(function () {
 	var newHref = $(this).attr('href').replace('hidemelink', 'me');
 	$(this).attr('href', newHref);
     });
+    var contactForm = $("#contact-form");
+    contactForm.submit(function() {
+        event.preventDefault();
+        var formDict = {};
+        contactForm.serializeArray().map(function(curr){formDict[curr.name] = curr.value;});
+        console.log(formDict);
+        if (formDict["g-recaptcha-response"].toString().trim()!==""){
+            $('#captcha-label').hide();
+            $.ajax({
+                type: "POST",
+                url: "http://localhost:8081/mailer",
+                data:  JSON.stringify(formDict),
+                success: function(data){
+                    console.log(data);
+                    if (data){
+                        alertify.notify('Sent', 'success', 2);
+                        contactForm.trigger("reset");
+                    }else{
+                        alertify.notify('Sent', 'failed', 2);
+                    }
+                },
+                dataType: "json",
+                contentType : "application/json"
+            });
+
+        }
+        else {
+            $('#captcha-label').show();
+        }
+}
+
 });

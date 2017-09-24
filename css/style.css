@@ -328,3 +328,13 @@ textarea {
         margin-bottom: 10px;
     }
 }
+.ajs-message.ajs-success {
+    color: #ffffff;
+    background-color: #005100;
+    text-align: center;
+}
+.ajs-message.ajs-failed {
+    color: #ffffff;
+    background-color: #61030e;
+    text-align: center;
+}
