@@ -30,7 +30,7 @@ $(document).ready(function() {
             $('#captcha-label').hide();
             $.ajax({
                 type: "POST",
-                url: "http://localhost:8081/mailer",
+                url: "https://csec.club/mailer",
                 data: JSON.stringify(formDict),
                 success: function(data) {
                     console.log(data);
