@@ -285,6 +285,10 @@ textarea {
     height: auto;
 }
 
+.reverse {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
 /*----- Responsive -----*/
 
 
