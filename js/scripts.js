@@ -14,7 +14,7 @@ $(document).ready(function() {
         var newHref = $(this).attr('href').replace('unhackable', 'mail.utoronto.ca');
         $(this).attr('href', newHref);
     });
-    $('#email-link').hover(function() {
+    $('.email-link').hover(function() {
         var newHref = $(this).attr('href').replace('hidemelink', 'me');
         $(this).attr('href', newHref);
     });
