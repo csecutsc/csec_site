@@ -45,6 +45,17 @@ body {
     margin: auto;
 }
 
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
+
+#text-carousel {
+  padding: 50px;
+  text-align: center;
+}
+
 .logo {
     margin-top: 10%;
 }
