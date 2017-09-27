@@ -51,7 +51,7 @@ app.post('/mailer', function (req, res) {
                 var mailOptions = {
                     from: email,
                     to: params["destinationEmail"],
-                    subject: 'UTSC SERVER',
+                    subject: name,
                     text: "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage:\n" + msg + "\n",
                     replyTo: email
                 };
