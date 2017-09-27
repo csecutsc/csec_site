@@ -30,15 +30,15 @@ $(document).ready(function() {
             $('#captcha-label').hide();
             $.ajax({
                 type: "POST",
-                url: "https://csec.club/mailer",
+                url: "http://127.0.0.1:5000/",
                 data: JSON.stringify(formDict),
                 success: function(data) {
                     console.log(data);
-                    if (data) {
+                    if (data["success"]===true) {
                         alertify.notify('Sent', 'success', 2);
                         contactForm.trigger("reset");
                     } else {
-                        alertify.notify('Sent', 'failed', 2);
+                        alertify.notify('Could not send', 'failed', 2);
                     }
                 },
                 dataType: "json",
