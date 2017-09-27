@@ -30,7 +30,7 @@ $(document).ready(function() {
             $('#captcha-label').hide();
             $.ajax({
                 type: "POST",
-                url: "http://127.0.0.1:5000/",
+                url: "/mailer",
                 data: JSON.stringify(formDict),
                 success: function(data) {
                     console.log(data);
