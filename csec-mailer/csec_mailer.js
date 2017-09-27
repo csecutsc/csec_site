@@ -9,7 +9,7 @@ var request = require('request');
 var validator = require('validator');
 var jsonfile = require('jsonfile');
 var app = express();
-var file = '../params.json';
+var file = '../../params.json';
 var params = jsonfile.readFileSync(file);
 
 var transporter = nodemailer.createTransport({
