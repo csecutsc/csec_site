@@ -1,7 +1,7 @@
 #algo-title {
     color: white;
     height: 70vh;
-    background-image: url("http://csec.club/images/cea/icpc_promo.jpg");
+    background-image: url("https://csec.club/images/cea/icpc_promo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -26,6 +26,28 @@
     padding: 1.5rem 3rem;
 }
 
+#icpc-section {
+    padding-top: 50px;
+}
+
+#icpc-section #icpc-about {
+    font-size: 18px;
+}
+
+#icpc-section h3{
+    text-align: center;
+}
+
+#icpc-section ul{
+    list-style: none;
+    padding: 0;
+}
+
+#icpc-section .row{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
 .dropdown-menu {
     background: #c0392b;
 }
@@ -42,6 +64,11 @@
     text-align: center;
 }
 
+#resources ul{
+    list-style: none;
+    padding: 0;
+}
+
 .resource-container {
     margin-bottom: 50px;
 }
@@ -54,10 +81,6 @@
     padding: 30px 0px;
 }
 
-#resources ul{
-    list-style: none;
-    padding: 0;
-}
 
 /*----- Responsive -----*/
 /*Large Devices*/
