@@ -1,7 +1,7 @@
 /**
  * @author K-M Samiul Haque <sammy.haque@mail.utoronto.ca>
  */
-
+var CircularJSON = require('circular-json');
 var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
@@ -42,8 +42,10 @@ app.post('/automate', apiLimiter, function (req, res) {
     reqJSON = req.body;
     if ("event" in reqJSON && "secret" in reqJSON) {
         if (reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
-            var consoleOut = exec(params["auto-path"], puts);
-            res.json({"status": "success", "msg": consoleOut});
+            var obj = exec(params["auto-path"], puts);
+            obj.self = obj;
+            var retmsg = CircularJSON.stringify(obj);
+            res.json({"status": "success", "msg":retmsg });
 
         } else {
             res.json({"status": "failed", "msg": "credentials or event incorrect"});
