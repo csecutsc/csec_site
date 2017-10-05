@@ -40,16 +40,16 @@ app.post('/automate',apiLimiter, function (req, res) {
     if("event" in reqJSON && "secret" in reqJSON){
         if(reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
             try {
-                console.log(exec(params["auto-path"], puts));
-                res.send('success');
+                var consoleOut = exec(params["auto-path"], puts);
+                res.json({"status":"success","msg":consoleOut});
             }catch(err){
-                res.send('error in script')
+                res.json({"status":"failed","msg":"error in script"});
             }
         }else{
-            res.send('credentials or event incorrect');
+            res.json({"status":"failed","msg":"credentials or event incorrect"});
         }
     }else{
-        res.send('format incorrect');
+        res.json({"status":"failed","msg":"json format incorrect"});
     }
 });
 
