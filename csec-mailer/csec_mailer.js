@@ -25,6 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+//rate limiter for api
 var apiLimiter = new RateLimit({
     windowMs: 30 * 60 * 1000, // 30 min
     max: 10,
