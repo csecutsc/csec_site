@@ -26,7 +26,7 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 var apiLimiter = new RateLimit({
-    windowMs: 30*60*1000, // 30 min
+    windowMs: 30 * 60 * 1000, // 30 min
     max: 10,
     delayMs: 0
 });
@@ -34,22 +34,22 @@ app.get('/mailer', function (req, res) {
     res.send("Message Received");
 });
 
-app.post('/automate',apiLimiter, function (req, res) {
-    function puts(error, stdout, stderr) { console.log(stdout) }
+app.post('/automate', apiLimiter, function (req, res) {
+    function puts(error, stdout, stderr) {
+        console.log(stdout)
+    }
+
     reqJSON = req.body;
-    if("event" in reqJSON && "secret" in reqJSON){
-        if(reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
-            try {
-                var consoleOut = exec(params["auto-path"], puts);
-                res.json({"status":"success","msg":consoleOut});
-            }catch(err){
-                res.json({"status":"failed","msg":"error in script"});
-            }
-        }else{
-            res.json({"status":"failed","msg":"credentials or event incorrect"});
+    if ("event" in reqJSON && "secret" in reqJSON) {
+        if (reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
+            var consoleOut = exec(params["auto-path"], puts);
+            res.json({"status": "success", "msg": consoleOut});
+
+        } else {
+            res.json({"status": "failed", "msg": "credentials or event incorrect"});
         }
-    }else{
-        res.json({"status":"failed","msg":"json format incorrect"});
+    } else {
+        res.json({"status": "failed", "msg": "json format incorrect"});
     }
 });
 
