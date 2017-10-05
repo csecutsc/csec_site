@@ -11,7 +11,8 @@ var jsonfile = require('jsonfile');
 var app = express();
 var file = '../../params.json';
 var params = jsonfile.readFileSync(file);
-
+var exec = require('child_process').exec;
+var RateLimit = require('express-rate-limit');
 var transporter = nodemailer.createTransport({
     service: params["email-service"],
     auth: {
@@ -19,12 +20,37 @@ var transporter = nodemailer.createTransport({
         pass: params["serverPass"]
     }
 });
+app.enable('trust proxy');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+var apiLimiter = new RateLimit({
+    windowMs: 30*60*1000, // 30 min
+    max: 10,
+    delayMs: 0
+});
 app.get('/mailer', function (req, res) {
     res.send("Message Received");
+});
+
+app.post('/automate',apiLimiter, function (req, res) {
+    function puts(error, stdout, stderr) { console.log(stdout) }
+    reqJSON = req.body;
+    if("event" in reqJSON && "secret" in reqJSON){
+        if(reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
+            try {
+                console.log(exec(params["auto-path"], puts));
+                res.send('success');
+            }catch(err){
+                res.send('error in script')
+            }
+        }else{
+            res.send('credentials or event incorrect');
+        }
+    }else{
+        res.send('format incorrect');
+    }
 });
 
 app.post('/mailer', function (req, res) {
