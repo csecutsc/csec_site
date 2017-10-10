@@ -274,10 +274,15 @@ textarea {
 
 #past-seminars .btn{
     position: absolute;
+    border: none;
     right: 0px;
     bottom: 0px;
     border-radius: 0 0 0.25rem 0.25rem;
     background-color: #1d2731;
+}
+
+#past-seminars .btn:hover {
+    background-color: #454c57;
 }
 
 #past-seminars .panel-img{
