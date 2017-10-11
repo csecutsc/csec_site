@@ -17,6 +17,10 @@ body {
     padding: 1.5rem 3rem;
 }
 
+.dropdown:hover> .dropdown-menu {
+    display: block;
+}
+
 #dropdown-noti {
     max-width: 300px;
 }
