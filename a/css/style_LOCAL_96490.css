@@ -1,0 +1,83 @@
+#algo-title {
+    color: white;
+    height: 70vh;
+    background-image: url("http://csec.club/images/cea/icpc_promo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 0px;
+    min-height: 500px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+#algo-title .page-header{
+    text-align: center;
+}
+
+.logo {
+    margin-top: 0;
+    width: 250px;
+}
+
+#navbar {
+    background-color: #c0392b;
+    padding: 1.5rem 3rem;
+}
+
+.dropdown-menu {
+    background: #c0392b;
+}
+
+.dropdown-item {
+    color: white;
+}
+
+.dropdown:hover> .dropdown-menu {
+    display: block;
+}
+
+#resources h3{
+    text-align: center;
+}
+
+.resource-container {
+    margin-bottom: 50px;
+}
+
+#location {
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px 0px;
+}
+
+#resources ul{
+    list-style: none;
+    padding: 0;
+}
+
+/*----- Responsive -----*/
+/*Large Devices*/
+@media screen and (min-width: 1150px) {
+    #algo-title .page-header{
+        font-size: 120px;
+    }
+}
+/*Medium sized devices*/
+@media screen and (min-width:765px) {
+    #algo-title .page-header{
+        font-size: 80px;
+    }
+}
+/*Phones*/
+@media (max-width: 765px) {
+    #algo-title {
+        height:50vh;
+    }
+    #algo-title .page-header{
+        font-size:50px;
+    }
+}

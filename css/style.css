@@ -260,6 +260,20 @@ textarea {
 }
 
 /* Seminar */
+.scrolly-container{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#past-seminars .scrolly-container .card{
+    min-height: 430px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
 #past-seminars{
     padding: 40px 0px;
     background: white;
@@ -272,7 +286,7 @@ textarea {
     text-align: center;
 }
 
-#past-seminars .btn{
+#past-seminars .btn-card{
     position: absolute;
     border: none;
     right: 0px;
@@ -281,8 +295,17 @@ textarea {
     background-color: #1d2731;
 }
 
-#past-seminars .btn:hover {
+#past-seminars .btn-section{
+    width: 100%;
+    background-color: inherit;
+}
+
+#past-seminars .btn-card:hover {
     background-color: #454c57;
+}
+
+#past-seminars .seminar-container {
+    border: 0;
 }
 
 #past-seminars .panel-img{
