@@ -294,9 +294,11 @@ textarea {
     color: #1d2731;
 }
 
-#past-seminars .btn-card{
+#past-seminars .btn-card,
+#past-seminars .btn-card:focus{
     border: none;
     background-color: #1d2731;
+    color: white;
 }
 
 #past-seminars .btn-section{
