@@ -373,3 +373,20 @@ textarea {
     background-color: #61030e;
     text-align: center;
 }
+
+.collapse_button{
+    float:right; 
+    padding: 0; 
+    border: none; 
+    background: none;
+}
+
+.anchorjump-bar{
+    background-color: rgb(245,245,245);
+    border-radius:10px;
+    width: 55%; 
+    height: 200%; 
+    padding: 20px; 
+    margin: 0 auto; 
+    text-align:center;
+}
