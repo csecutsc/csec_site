@@ -1,5 +1,4 @@
 # CSEC Site Repo
-------
 
 The official repo for CSEC and its division's sites
 http://www.csec.club
