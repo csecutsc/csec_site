@@ -382,8 +382,8 @@ textarea {
 }
 
 .anchorjump-bar{
-    background-color: rgb(245,245,245);
-    border-radius:10px;
+    background-color: #eee;
+    border-radius:0 0 10px 10px;
     width: 55%; 
     height: 200%; 
     padding: 20px; 
