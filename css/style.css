@@ -390,3 +390,9 @@ textarea {
     margin: 0 auto; 
     text-align:center;
 }
+
+@media only screen and (max-width: 400px) {
+    .anchorjump-bar{
+        width: 80%;
+    }
+}
