@@ -11,5 +11,18 @@
     "request": "^2.82.0",
     "shelljs": "^0.7.8",
     "validator": "^8.2.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start":"node app.js"
+  },
+  "repository": "https://github.com/csecutsc/csec_site/tree/master/csec-mailer",
+  "license": "GPL-3.0+",
+  "description": "CSEC Mailer and CSEC Auto pull",
+  "author": {
+    "name": "K-M Samiul Haque",
+    "email": "sammy.haque@mail.utoronto.ca",
+    "github": "https://github.com/ViperXYZ",
+    "personal-site": "https://www.samiulhaque.com"
   }
 }

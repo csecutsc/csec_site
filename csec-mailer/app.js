@@ -46,7 +46,7 @@ app.post('/automate', apiLimiter, function (req, res) {
             var obj = exec(params["auto-path"], puts);
             obj.self = obj;
             var retmsg = CircularJSON.stringify(obj);
-            res.json({"status": "success", "msg":retmsg });
+            res.json({"status": "success", "msg": retmsg});
 
         } else {
             res.json({"status": "failed", "msg": "credentials or event incorrect"});
@@ -102,8 +102,6 @@ app.post('/mailer', function (req, res) {
 
 
 var server = app.listen(8081, function () {
-    var host = server.address().address;
     var port = server.address().port;
-
-    console.log("CSEC Mailer at http://%s:%s", host, port);
+    console.log("CSEC Mailer at http://localhost:%s", port);
 });
