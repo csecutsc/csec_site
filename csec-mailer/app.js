@@ -8,6 +8,7 @@ var request = require('request');
 var validator = require('validator');
 var jsonfile = require('jsonfile');
 var app = express();
+var async = require("async");
 var file = '../../params.json';
 var params = jsonfile.readFileSync(file);
 var exec = require('child_process').exec;
@@ -41,17 +42,18 @@ app.post('/automate', apiLimiter, function (req, res) {
             var child;
             var command = params["auto-path"];
             var msg = "";
+
             child = exec(command,
                 function (error, stdout, stderr) {
                     console.log('stderr: ' + stderr);
                     if (error !== null) {
-                        console.log('exec error: ' + error);
+                        msg += error;
                     }
                     msg += stdout;
                 });
-            setTimeout(function () {
-                res.json({"status": "success", "msg": msg});
-            }, 5000);
+
+            res.json({"status": "success", "msg": msg});
+
         } else {
             res.json({"status": "failed", "msg": "credentials or event incorrect"});
         }
