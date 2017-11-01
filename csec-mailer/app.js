@@ -8,7 +8,6 @@ var request = require('request');
 var validator = require('validator');
 var jsonfile = require('jsonfile');
 var app = express();
-var async = require("async");
 var file = '../../params.json';
 var params = jsonfile.readFileSync(file);
 var exec = require('child_process').exec;
