@@ -48,8 +48,10 @@ app.post('/automate', apiLimiter, function (req, res) {
                         console.log('exec error: ' + error);
                     }
                     msg += stdout;
-                    res.json({"status": "success", "msg": msg});
                 });
+            setTimeout(function () {
+                res.json({"status": "success", "msg": msg});
+            }, 5000);
         } else {
             res.json({"status": "failed", "msg": "credentials or event incorrect"});
         }
