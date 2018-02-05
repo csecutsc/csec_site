@@ -10,8 +10,6 @@ var jsonfile = require('jsonfile');
 var app = express();
 var file = '../../params.json';
 var params = jsonfile.readFileSync(file);
-var exec = require('child_process').exec;
-var RateLimit = require('express-rate-limit');
 var transporter = nodemailer.createTransport({
     service: params["email-service"],
     auth: {
@@ -24,41 +22,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-//rate limiter for api
-var apiLimiter = new RateLimit({
-    windowMs: 30 * 60 * 1000, // 30 min
-    max: 10,
-    delayMs: 0
-});
+
 app.get('/mailer', function (req, res) {
     res.send("Message Received");
-});
-
-app.post('/automate', apiLimiter, function (req, res) {
-    reqJSON = req.body;
-    if ("event" in reqJSON && "secret" in reqJSON) {
-        if (reqJSON.secret === params["secret"] && reqJSON.event === params["events"]) {
-            var child;
-            var command = params["auto-path"];
-            var msg = "";
-
-            child = exec(command,
-                function (error, stdout, stderr) {
-                    console.log('stderr: ' + stderr);
-                    if (error !== null) {
-                        msg += error;
-                    }
-                    msg += stdout;
-                });
-
-            res.json({"status": "success", "msg": msg});
-
-        } else {
-            res.json({"status": "failed", "msg": "credentials or event incorrect"});
-        }
-    } else {
-        res.json({"status": "failed", "msg": "json format incorrect"});
-    }
 });
 
 app.post('/mailer', function (req, res) {
