@@ -8,3 +8,4 @@ We at CSEC encourage open-source contributions to our website, so feel free to b
 
 **NOTE**: Any pull requests that do not positively affect our website, or are deemed to be detrimental to the site, will not be merged.
 
+
