@@ -1,20 +1,19 @@
 /**
- * @author K-M Samiul Haque <sammy.haque@mail.utoronto.ca>
+ * @author Samiul Haque < github: ViperXYZ >
  */
 var express = require('express');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var request = require('request');
 var validator = require('validator');
-var jsonfile = require('jsonfile');
+
 var app = express();
-var file = '../../params.json';
-var params = jsonfile.readFileSync(file);
+
 var transporter = nodemailer.createTransport({
-    service: params["email-service"],
+    service: process.env.email_service,
     auth: {
-        user: params["serverEmail"],
-        pass: params["serverPass"]
+        user: process.env.server_email,
+        pass: process.env.server_pass
     }
 });
 app.enable('trust proxy');
@@ -37,8 +36,8 @@ app.post('/mailer', function (req, res) {
     }
 
     request.post({
-        url: params["apiURL"], form: {
-            secret: params["apiSecret"],
+        url: process.env.api_url, form: {
+            secret: process.env.api_secret,
             response: formData["g-recaptcha-response"]
         }
     }, function (err, httpResponse, body) {
@@ -50,7 +49,7 @@ app.post('/mailer', function (req, res) {
             if (name && email && phone && msg && validator.isEmail(email)) {
                 var mailOptions = {
                     from: email,
-                    to: params["destinationEmail"],
+                    to: process.env.destination_email,
                     subject: name,
                     text: "Name: " + name + "\nEmail: " + email + "\nPhone: " + phone + "\nMessage:\n" + msg + "\n",
                     replyTo: email

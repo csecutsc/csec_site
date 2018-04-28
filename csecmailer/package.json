@@ -1,0 +1,22 @@
+{
+  "name": "CSEC-MAILER",
+  "version": "0.0.1",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4",
+    "request": "^2.85.0",
+    "validator": "^9.4.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": "https://github.com/csecutsc/csec_site/tree/master/csec-mailer",
+  "license": "GPL-3.0+",
+  "description": "CSEC Mailer",
+  "author": {
+    "name": "K-M Samiul Haque",
+    "github": "https://github.com/ViperXYZ"
+  }
+}
