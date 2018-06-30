@@ -74,7 +74,10 @@ $('a[href*="#"]')
                 <ul class="navbar-nav">
                     <li class="nav-item"> <a class="nav-link" href="/#about">About</a> </li>
                     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" data-toggle="dropdown" style="cursor: pointer;">Divisions</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> <a class="dropdown-item" href="https://algo.csec.club">CSEC-A</a> <a class="dropdown-item" href="https://security.csec.club">CSEC-S</a> <a class="dropdown-item" href="https://web.csec.club">CSEC-W</a> </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"> 
+                            <a class="dropdown-item" href="https://algo.csec.club">Algorithms</a> 
+                            <!-- <a class="dropdown-item" href="https://security.csec.club">CSEC-S</a> 
+                            <a class="dropdown-item" href="https://web.csec.club">CSEC-W</a> </div> -->
                     </li>
                     <li class="nav-item"> <a class="nav-link" href="team">Team</a> </li>
                     <li class="nav-item"> <a class="nav-link" href="events">Events</a> </li>
@@ -92,9 +95,9 @@ $('a[href*="#"]')
         </nav>
     </div>
     <div class="anchorjump-bar">
-        <a href="#EOTM" class="btn btn-secondary col-lg-4 col-xs-1">Event of the Month</a>
-        <a href="#ONCE" class="btn btn-secondary col-lg-4 col-xs-1">On Campus Events</a>
-        <a href="#OFFCE" class="btn btn-secondary col-lg-4 col-xs-1">Off Campus Events</a>
+        <a href="#EOTM" class="btn btn-secondary col-lg-3 col-xs-1">Event of the Month</a>
+        <a href="#ONCE" class="btn btn-secondary col-lg-3 col-xs-1">On Campus Events</a>
+        <a href="#OFFCE" class="btn btn-secondary col-lg-3 col-xs-1">Off Campus Events</a>
     </div>
     <div id="past-seminars">
         <div class="container">
@@ -106,11 +109,45 @@ $('a[href*="#"]')
             <div class="card-deck">
                 <div class="col-md-12">
                     <div class="card">
-                        <div class="card-block"> <i class="fa fa-btc"></i>
-                            <h3 class="card-title">Cryptocurrencies Decrypted</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">Friday November 17, 4PM-6PM @ HW216</h6>
-                            <p class="card-text">Curious about Cryptocurrencies? Don't know where to get started? Join CSEC this November 17th from 4-6PM in HW216 as we explain the basics of cryptocurrencies and explore the implications of it on our economy. We'll talk about mining cryptocurrency, current events, and how to get rich quick (maybe not).
-                            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCSEC.UTSC%2Fposts%2F1491220340999616&width=500" width="100%" height="669" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                        <div class="card-block"> 
+                            <!-- <i class="fa fa-btc"></i> -->
+                            <h3 class="card-title"> Planned Seminars for 2018/2019 </h3>
+                            <h6 class="card-subtitle mb-2 text-muted">A basic roadmap for our seminars in 2018/2019</h6>
+                            <p class="card-text">
+                                <b>September:</b> <br>
+                                    UTSCode II
+                                    <br>
+                                    Job Searching and Networking 
+                                <br><br>
+                                <b>October:</b> <br>
+                                    Command Line and Linux
+                                <br><br>
+                                <b>November:</b> <br>
+                                    Version Control and Git 
+                                    <br>
+                                    CI/CD and Jenkins
+                                <br><br>
+                                <b>December:</b> <br>
+                                    Containers and Docker
+                                    <br>
+                                    Orchestration and Kubernetes
+                                <br><br>
+                                <b>January:</b> <br>
+                                    Open Source Software Movement
+                                    <br>
+                                    Lightning Talks about various subjects
+                                <br><br>
+                                <b>February:</b> <br>
+                                    Hack the Valley (with AMACSS!)
+                                <br><br>
+                                <b>March:</b> <br>
+                                    Introduction to Machine Learning
+                                <br><br>
+                                <b>April:</b> <br>
+                                    Party, General Elections, Administrivia
+                                <br><br>
+                            </p>
+                            <!-- <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCSEC.UTSC%2Fposts%2F1491220340999616&width=500" width="100%" height="669" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe> -->
 
                         </div>
                     </div>
@@ -120,12 +157,12 @@ $('a[href*="#"]')
         <br>
         <a id="ONCE">
         <div class="container">
-            <h1 class="page-header">On-Campus Events <span style="color:#c0392b">[1]</span> <button class="collapse_button" data-toggle="collapse" data-target="#oncampus">+</button></h1>
+            <h1 class="page-header">On-Campus Events <span style="color:#c0392b">[0]</span> <button class="collapse_button" data-toggle="collapse" data-target="#oncampus">+</button></h1>
             <hr>
             <p style="text-align: center">Seminars, competitions, and events at UTSC</p>
             <div id="oncampus" class="collapse">
                 <div class="card-deck justify-content-center align-items-center">
-                    <div class="col-md-4">
+                    <!-- <div class="col-md-4">
                         <div class="card">
                             <div class="card-block"> <i class="fa fa-lightbulb-o"></i>
                                 <h3 class="card-title">UTSC Startup Competition</h3>
@@ -134,19 +171,19 @@ $('a[href*="#"]')
                             </div>
                             <div class="card-footer"><a href="https://www.utsc.utoronto.ca/projects/thehub/startup-competition/" class="btn btn-card btn-primary btn-block" target="_blank">Learn more!</a> </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
         <br>
         <a id="OFFCE">
         <div class="container">
-            <h1 class="page-header">Off-Campus Events <span style="color:#c0392b">[3]</span> <button class="collapse_button" data-toggle="collapse" data-target="#offcampus">+</button></h1>
+            <h1 class="page-header">Off-Campus Events <span style="color:#c0392b">[0]</span> <button class="collapse_button" data-toggle="collapse" data-target="#offcampus">+</button></h1>
             <hr>
             <p style="text-align: center">Seminars, competitions, and events outside of UTSC</p>
             <div id="offcampus" class="collapse">
                 <div class="card-deck">
-                    <div class="card">
+                    <!-- <div class="card">
                         <div class="card-block"> <i class="fa fa-facebook"></i>
                             <h3 class="card-title">Developer Circles Community Challenge</h3>
                             <h6 class="card-subtitle mb-2 text-muted">November 20, 2017</h6>
@@ -154,25 +191,7 @@ $('a[href*="#"]')
                             <p class="card-text">Using at least one Facebook technology, create a solution for developers that either 1) improves their coding skills, 2) makes them more productive coders, or 3) fosters community with other developers. Over a dozen prizes worth more than $150,000 will be awarded, including three $5,000 student team awards.</p>
                         </div>
                         <div class="card-footer"> <a href="https://developercircles.devpost.com/?utm_source=personal&utm_medium=email&utm_content=studentclub&utm_campaign=fbdevc" class="btn btn-card btn-primary btn-block" target="_blank">Learn more!</a> </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-block"> <i class="fl-redhat" style="font-size: 2rem"></i>
-                            <h3 class="card-title">Hack Your Travel with OpenShift</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">December 5, 2017</h6>
-                            <br>
-                            <p class="card-text">To enter Red Hat's OpenShift hackathon, build an app that helps travelers get around town, plan a trip, or find guidance. All entries must be built on or migrated to the OpenShift Online platform and integrate JBoss Middleware. Cash prizes total $30,000, including a $2,000 student team award.</p>
-                        </div>
-                        <div class="card-footer"> <a href="https://hackyourtravel.devpost.com/?utm_source=personal&utm_medium=email&utm_content=studentclub&utm_campaign=ostravel" class="btn btn-card btn-primary btn-block" target="_blank">Learn more!</a> </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-block"> <i class="fa fa-windows"></i>
-                            <h3 class="card-title">Office 365 Hack Productivity 3</h3>
-                            <h6 class="card-subtitle mb-2 text-muted">December 18, 2017</h6>
-                            <br>
-                            <p class="card-text">Enter Microsoft's third edition of Hack Productivity by building a productivity-boosting app for the workplace. Entries must use at least one Office 365 product, tool, or API. Prizes include $35,000 in cash, Surface PCs, a meeting with Microsoft Ventures, and promotion across Office channels.</p>
-                        </div>
-                        <div class="card-footer"> <a href="https://office365hack3.devpost.com/?utm_source=personal&utm_medium=email&utm_content=studentclub&utm_campaign=office365hack3" class="btn btn-card btn-primary btn-block" target="_blank">Learn more!</a> </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
