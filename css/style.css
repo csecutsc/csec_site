@@ -324,6 +324,13 @@ textarea {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
+
+#FAQ .card-body {
+  padding: 10px 35px;
+  text-align: left;
+}
+
+.accordion h5 .btn {white-space: normal;}
 /*----- Responsive -----*/
 
 
