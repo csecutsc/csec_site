@@ -1,323 +1,323 @@
 body {
-    font-family: "Open Sans", sans-serif;
-    color: black;
-    background: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+  background: #FFFFFF;
 }
 
 .nav-nopadding {
-    padding: 0;
+  padding: 0;
 }
 
 .body-par {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
 #navbar {
-    background-color: #1d2731;
-    padding: 1.5rem 3rem;
+  background-color: #1d2731;
+  padding: 1.5rem 3rem;
 }
 
-.dropdown:hover> .dropdown-menu {
-    display: block;
+.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
 #dropdown-noti {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 #main {
-    text-align: center;
-    color: white;
-    height: 70vh;
-    min-height: 600px;
-    background-image: url("../images/cea/csec_seminar_1.png");
-    border-radius: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: auto;
+  text-align: center;
+  color: white;
+  height: 70vh;
+  min-height: 600px;
+  background-image: url("../images/cea/csec_seminar_1.png");
+  border-radius: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
 }
 
 .logo {
-    margin-top: 10%;
+  margin-top: 10%;
 }
 
 .card-image {
-    padding: 10% 60px;
+  padding: 10% 60px;
 }
 
 .page-header {
-    margin-top: 30px;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
+  margin-top: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 
 .subtitle {
-    font-weight: 400;
-    margin: 50px 0 30px 0;
+  font-weight: 400;
+  margin: 50px 0 30px 0;
 }
 
 .thirds-item {
-    background: #f0f0f0;
-    max-width: 31%;
-    padding: 25px;
-    border-radius: 5px;
-    margin: 1%;
+  background: #f0f0f0;
+  max-width: 31%;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 1%;
 }
 
 .red-bg {
-    background: #c0392b;
+  background: #c0392b;
 }
 
 .green-bg {
-    background: #27ae60;
+  background: #27ae60;
 }
 
 .indigo-bg {
-    background: #2e3192;
+  background: #2e3192;
 }
 
 .dark-card-btn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .white-text {
-    color: white;
+  color: white;
 }
 
 .thirds-header {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 #about {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 #divisions {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
 #divisions .card {
-    color: black;
+  color: black;
 }
 
 #contact {
-    text-align: center;
+  text-align: center;
 }
 
 #contact-links {
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 #contact-links a {
-    margin: 5px 0;
-    padding: 0px 10px 0px 10px;
-    display: block;
-    color: #454C57;
-    text-decoration: none;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  margin: 5px 0;
+  padding: 0px 10px 0px 10px;
+  display: block;
+  color: #454C57;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 #contact-links a:hover {
-    color: #1d2731;
+  color: #1d2731;
 }
 
 #contact-info {
-    float: left;
-    list-style-type: none;
+  float: left;
+  list-style-type: none;
 }
 
 #location {
-    background-color: #1d2731;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    padding: 30px 0px;
+  background-color: #1d2731;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 30px 0px;
 }
 
 .footer {
-    background-color: #1d2731;
-    color: white;
-    text-align: center;
-    font-size: 12px;
-    padding: 10px 0px 10px 0px;
+  background-color: #1d2731;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0px 10px 0px;
 }
 
 #message-form .container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #social a {
-    font-size: 50px;
-    color: #454C57;
-    padding: 20px;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  font-size: 50px;
+  color: #454C57;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 #social a:hover {
-    color: #1d2731;
+  color: #1d2731;
 }
 
 
 /* Team Page */
 
 #team {
-    padding: 40px 0px;
-    background: white;
-    color: black;
+  padding: 40px 0px;
+  background: white;
+  color: black;
 }
 
 .member {
-    background-color: #f0f0f0;
-    height: 320px;
-    width: 275px;
-    border: none;
-    padding: 20px;
-    color: black;
-    margin: auto;
+  background-color: #f0f0f0;
+  height: 320px;
+  width: 275px;
+  border: none;
+  padding: 20px;
+  color: black;
+  margin: auto;
 }
 
 .member a {
-    color: #454C57;
-    margin: 5px;
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  color: #454C57;
+  margin: 5px;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
 .member a:hover {
-    color: #1d2731;
+  color: #1d2731;
 }
 
 .member-img {
-    width: 150px;
-    height: 150px;
-    margin: auto;
+  width: 150px;
+  height: 150px;
+  margin: auto;
 }
 
 .card-body {
-    text-align: center;
+  text-align: center;
 }
 
 .card-title {
-    color: #1d2731;
-    font-weight: 700;
-    margin: 20px 0 15px 0;
+  color: #1d2731;
+  font-weight: 700;
+  margin: 20px 0 15px 0;
 }
 
 .card-subtitle {
-    font-weight: 400;
-    margin-bottom: 20px;
-    color: #454C57;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #454C57;
 }
 
 #open-positions {
-    margin: 60px 0;
-    background: #f0f0f0;
-    padding: 40px;
-    color: black;
-    text-align: center
+  margin: 60px 0;
+  background: #f0f0f0;
+  padding: 40px;
+  color: black;
+  text-align: center
 }
 
 input[type=text],
 input[type=email] {
-    background: #EEE;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 6px 0;
-    box-sizing: border-box;
+  background: #EEE;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 6px 0;
+  box-sizing: border-box;
 }
 
 input[type=submit] {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 textarea {
-    background: #EEE;
-    border-radius: 5px;
-    border: none;
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
+  background: #EEE;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
 
 #info-box {
-    float: left;
+  float: left;
 }
 
 #msg-box {
-    float: right;
+  float: right;
 }
 
 /* News */
 
-#dropdown-noti h2{
-    text-align:center;
+#dropdown-noti h2 {
+  text-align: center;
 }
 
-#dropdown-noti iframe{
-    border:none;
+#dropdown-noti iframe {
+  border: none;
 }
 
 /* Seminar */
-.scrolly-container{
-    overflow-y: hidden;
-    overflow-x: scroll;
-    white-space: nowrap;
+.scrolly-container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
-#past-seminars .scrolly-container .card{
-    min-height: 430px;
-    width: 200px;
-    margin-top: 20px;
-    text-align: center;
-    display: inline-block;
+#past-seminars .scrolly-container .card {
+  min-height: 430px;
+  width: 200px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
 }
 
-#past-seminars{
-    padding: 40px 0px;
-    background: white;
-    color: black;
+#past-seminars {
+  padding: 40px 0px;
+  background: white;
+  color: black;
 }
 
-#past-seminars .card{
-    margin-top: 20px;
-    text-align: center;
+#past-seminars .card {
+  margin-top: 20px;
+  text-align: center;
 }
 
-#past-seminars .card i{
-    font-size: 2rem;
-    color: #1d2731;
+#past-seminars .card i {
+  font-size: 2rem;
+  color: #1d2731;
 }
 
 #past-seminars .btn-card,
-#past-seminars .btn-card:focus{
-    border: none;
-    background-color: #1d2731;
-    color: white;
+#past-seminars .btn-card:focus {
+  border: none;
+  background-color: #1d2731;
+  color: white;
 }
 
-#past-seminars .btn-section{
-    width: 100%;
-    background-color: inherit;
+#past-seminars .btn-section {
+  width: 100%;
+  background-color: inherit;
 }
 
 #past-seminars .btn-card:hover {
-    background-color: #454c57;
+  background-color: #454c57;
 }
 
 #past-seminars .seminar-container {
-    border: 0;
+  border: 0;
 }
 
-#past-seminars .panel-img{
-    display: block;
-    width: 100%;
-    height: auto;
+#past-seminars .panel-img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .reverse {
@@ -330,76 +330,87 @@ textarea {
   text-align: left;
 }
 
-.accordion h5 .btn {white-space: normal;}
+.accordion h5 .btn {
+  white-space: normal;
+}
+
 /*----- Responsive -----*/
 
 
 /*Large Devices*/
 
 @media screen and (min-width: 1150px) {
-    .member {
-        margin-bottom: 0px;
-    }
+  .member {
+    margin-bottom: 0px;
+  }
 }
 
 
 /*Medium sized devices*/
 
 @media screen and (min-width:765px) {
-    .member {
-        margin-bottom: 10px;
-    }
+  .member {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width:992px) and (min-width:768px) {
-    .member-img {
-        width: 100px;
-        height: 100px;
-    }
+  .member-img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 
 /*Phones*/
 
 @media (max-width: 765px) {
-    .thirds-item {
-        max-width: 100%;
-        margin: 3% 5%;
-    }
-    .member {
-        margin-bottom: 10px;
-    }
-}
-.ajs-message.ajs-success {
+  .thirds-item {
+    max-width: 100%;
+    margin: 3% 5%;
+  }
+
+  .member {
+    margin-bottom: 10px;
+  }
+
+  .ajs-message.ajs-success {
     color: #ffffff;
     background-color: #005100;
     text-align: center;
-}
-.ajs-message.ajs-failed {
+  }
+
+  .ajs-message.ajs-failed {
     color: #ffffff;
     background-color: #61030e;
     text-align: center;
-}
+  }
 
-.collapse_button{
-    float:right; 
-    padding: 0; 
-    border: none; 
+  .collapse_button {
+    float: right;
+    padding: 0;
+    border: none;
     background: none;
-}
+  }
 
-.anchorjump-bar{
+  .anchorjump-bar {
     background-color: #eee;
-    border-radius:0 0 10px 10px;
-    width: 55%; 
-    height: 200%; 
-    padding: 20px; 
-    margin: 0 auto; 
-    text-align:center;
+    border-radius: 0 0 10px 10px;
+    width: 55%;
+    height: 200%;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #FAQ .card-body {
+    padding: 15px;
+    text-align: left;
+  }
 }
 
 @media only screen and (max-width: 400px) {
-    .anchorjump-bar{
-        width: 80%;
-    }
+  .anchorjump-bar {
+    width: 80%;
+  }
 }

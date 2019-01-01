@@ -220,7 +220,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-12">
           <br>
           <h4>Project FAQ</h4>
@@ -296,7 +296,9 @@
                     <li>Am I ok with "fast as native" performance?</li>
                   </ul>
                   <p><strong>If you answered yes to 1-3, go with Traditional</strong>. When developing with native Android and iOS languages, you get much better consistant performance, more tools to work with and more control over how your application works. The problem is there is more work involved in building your application and you have to build a whole new application if you want to have it on both platforms. The differences between Android and iOS are distinct and you can read more about them in the links above. Android Studio or IntelliJ for Android and XCode is a must for iOS</p>
-                  <p><strong>If you answered yes to 4-7, go with a Cross Platform solution</strong>. When developing with a Cross Platform solution, you will build your application faster, have one app that will share code and work both on iOS and Android, and have native-like performance most of the time! The problem is that these solutions might run into issues from questions 1-3. However, you can look into these platforms and see if their features are supported for the application you're building. <strong>React Native</strong> is great if you already have experience building web applications in React. <strong>Flutter</strong> is great since it is similar with Android or traditional app development. <strong>Xamarin</strong> would be good for you if you have experience with C# or .Net applications. You can use practically any text editor to build you application. Check out this article on how one developer had a 85% reduction in code with a cross platform solution: <a target="_blank" href="https://proandroiddev.com/why-flutter-will-change-mobile-development-for-the-best-c249f71fa63c">Why Flutter will change mobile development for the best</a>.
+                  <p><strong>If you answered yes to 4-7, go with a Cross Platform solution</strong>. When developing with a Cross Platform solution, you will build your application faster, have one app that will share code, work both on iOS and Android, and have native-like performance! The problem is that these solutions might run into issues from questions 1-3. However, you can look into these platforms and see if their features are supported for the application you're building. Example: Flutter and React Native allows you to mix with platform code (i.e standard code from Android or iOS) so you can add practically any new feature with a bit of work. These solutions are stable enough to use in production however there are some quirks you might have to look into for your project.
+                    <br>
+                    <strong>React Native</strong> is great if you already have experience building web applications in React. <strong>Flutter</strong> is great since it is similar with Android or traditional app development. <strong>Xamarin</strong> would be good for you if you have experience with C# or .Net applications. You can use practically any text editor to build you application. Check out this article on how one developer had a 85% reduction in code with a cross platform solution: <a target="_blank" href="https://proandroiddev.com/why-flutter-will-change-mobile-development-for-the-best-c249f71fa63c">Why Flutter will change mobile development for the best</a>.
                   </p>
                   <b>Note:</b> If you're trying to build an iOS application, you will need a Mac. <b>Exception:</b> React Native with <a target="_blank" href="https://expo.io/"> Expo</a> will allow you to run your React app on your Android or iOS without connecting it your computer.
                 </div>
@@ -320,14 +322,14 @@
                         <li>HTML/CSS</li>
                         <li>Templating Engines</li>
                         <ul>
-                          <li><a target="_blank" href="https://developer.apple.com/">Pug.JS</a></li>
+                          <li><a target="_blank" href="https://pugjs.org/api/getting-started.html">Pug.JS</a></li>
                           <li><a target="_blank" href="https://ejs.co/">ejs</a></li>
                           <li><a target="_blank" href="https://handlebarsjs.com/">handlebars</a></li>
                         </ul>
                         <li>JavaScript Frameworks/Libraries</li>
                         <ul>
-                          <li><a target="_blank" href="https://developer.apple.com/">React</a> (Facebook - JavaScript)</li>
-                          <li><a target="_blank" href="https://developer.apple.com/">Angular</a> (Google - TypeScript)</li>
+                          <li><a target="_blank" href="https://reactjs.org/">React</a> (Facebook - JavaScript)</li>
+                          <li><a target="_blank" href="https://angular.io/">Angular</a> (Google - TypeScript)</li>
                           <li><a target="_blank" href="https://vuejs.org/">Vue</a> (JavaScript)</li>
                         </ul>
                       </ul>
@@ -336,7 +338,7 @@
                       Back-end / Server Language / Environments
                       <ul>
                         <li><a target="_blank" href="https://nodejs.org/en/">Node.js</a> or <a target="_blank" href="https://expressjs.com/">Express.js</a> (JavaScript)</li>
-                        <li><a target="_blank" href="https://www.w3schools.com/php7/">MAMP (PHP 7)</a></li>
+                        <li><a target="_blank" href="https://www.w3schools.com/php7/">MAMP with PHP 7</a></li>
                         <li><a target="_blank" href="https://rubyonrails.org/">Rails</a> (Ruby)</li>
                         <li><a target="_blank" href="http://flask.pocoo.org/">Flask</a> (Python)</li>
                         <li><a target="_blank" href="https://www.djangoproject.com/">Django</a> (Python)</li>
@@ -350,7 +352,7 @@
                           <li><a target="_blank" href="https://www.postgresql.org/">PostgreSQL</a></li>
                           <li><a target="_blank" href="https://www.mysql.com/"> MySQL</a></li>
                         </ul>
-                        <li>No-SQL</li>
+                        <li>NoSQL</li>
                         <ul>
                           <li><a target="_blank" href="https://www.mongodb.com/">MongoDB</a></li>
                           <li><a target="_blank" href="https://aws.amazon.com/dynamodb/"> DynamoDB (Amazon)</a></li>
@@ -359,6 +361,7 @@
                       </ul>
                     </div>
                   </div>
+                  You can also check <a target="_blank" href="https://insights.stackoverflow.com/survey/2018/">StackOverFlow's Developer Survey</a> for other choices as well
                   <hr>
                   <h5>Before you begin your project, consider the following:</h5>
                   <ul style="list-style-type:decimal">
@@ -374,7 +377,10 @@
                   <h5>Choice of Front-end</h5>
                   <p> If you just need a simple frontend with buttons or forms then <strong>HTML/CSS</strong> will be enough for your use. However, if you're making a lot of pages, this can be very tedious. To reduce the workload, you can use a templating engine such as the ones listed above.
                     <br>
-                    <strong>Templating Engines</strong> allow you to reuse code, allow you to create templates where you can customize inputs and automatically generate custom webpages. You can read more about them by clicking the links.
+                    <strong>Templating Engines</strong> allow you to reuse code, allow you to create templates where you can customize inputs and automatically generate custom webpages. You can read more about them by clicking the links:
+                    <li><a target="_blank" href="https://pugjs.org/api/getting-started.html">Pug.JS</a></li>
+                    <li><a target="_blank" href="https://ejs.co/">ejs</a></li>
+                    <li><a target="_blank" href="https://handlebarsjs.com/">handlebars</a></li>
                     <br>
                     <strong>JavaScript Frameworks/Libraries</strong> are powerful tools that will allow you to take your UI to the next level, save time, reuse code and more! You can read more on when to use them and the differences between them with the following articles:
                     <li><a target="_blank" href="https://skillcrush.com/2018/07/23/what-is-a-javascript-framework/">What Is a JavaScript Framework? Here’s Everything You Need to Know</a></li>
@@ -384,12 +390,21 @@
 
                   </p>
                   <h5>Choice of Back-end</h5>
-                  <p>Coming soon...
+                  <p> As of 2018, some of the backend technologies are comparable in performance. However, there are differences depending on the application you're building. Choose the best one that is best suited for your project, a new platform you would like to learn or the one you feel comfortable with. An example would be using React with Node.js so you would be using the same language for the frontend and backend. Node.js is currently the most popular backend web technology due to it using JavaScript and having a lot of community support for it's packages. <br>
+                    Node.js has been the king of speed for the last few years but PHP 7 is a new challenger. It's an interesting topic that you can read these articles to learn more:
+                    <li><a target="_blank" href="https://belitsoft.com/php-development-services/php7-vs-nodejs">PHP 7 vs. Node.js</a></li>
+                    <li><a target="_blank" href="https://thinkmobiles.com/blog/php-vs-nodejs/">PHP vs Node.js 2018</a></li>
                   </p>
                   <h5>Choice of Database</h5>
-                  <p>Coming soon...
+                  <p>The main thing that determines the database for your application is whether you need a SQL or a NoSQL database. <b>SQL databases</b> are relational where there are recognizable relationships between stored data in a table of information. SQL provides data consistency, allow complex queries and safe structured data.<br>
+                    <b>NoSQL databases</b> are non-relational where unstructured data is stored in collections. These collections can be key-valued pairs, graph or much more! NoSQL is easily scalabile for large data sets, and allows flexibility to change your collection structures as you build your application easily without an existing predefined structure. <br>
+                    Check out the following links for more info on the use cases, the benefits and con's of each type:
+                    <li><a target="_blank" href="https://searchdatamanagement.techtarget.com/definition/relational-database">What is a relational database?</a></li>
+                    <li><a target="_blank" href="https://www.geeksforgeeks.org/difference-between-sql-and-nosql/">Difference between SQL and NoSQL</a></li>
+                    <li><a target="_blank" href="https://www.thegeekstuff.com/2014/01/sql-vs-nosql-db/?utm_source=tuicool">SQL vs NoSQL Database Differences Explained with few Example DB</a></li>
+                    <li><a target="_blank" href="https://graphql.org/">GraphQL</a></li>
                   </p>
-                  <h5>Ok great. How do I start?</h5>
+                  <h5>Ok great. How do go about learning these?</h5>
                   <p>Coming soon...</p>
                   <!--
                   <p> Pick a Back-end / Server Language / Environment technology. For example Node.js with JavaScript, <a target="_blank" href="https://www.mamp.info/en/">MAMP</a> with PHP and Django with Python. For this guide, I will choose Node.js, MongoDB and React.
@@ -404,7 +419,7 @@
           </div>
           <br>
         </div>
-        
+
       </div>
     </div>
   </div>
